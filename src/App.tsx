@@ -1,9 +1,10 @@
+import { ExperienceBar } from './components/ExperienceBar';
 import './styles/global.css';
 
 function App() {
   return (
-    <div className="App">
-      Testo
+    <div className="Container">
+      < ExperienceBar />
     </div>
   );
 }
