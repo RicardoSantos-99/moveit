@@ -1,10 +1,15 @@
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+import { ChallengesProvider } from '../contexts/ChallengesContext'
+import { Children, useState } from 'react';
+
+function MyApp ({ Component, pageProps }) {
+  
+
   return (
-    <div className="container">
+    <ChallengesProvider>
       <Component {...pageProps} />
-    </div>
+    </ChallengesProvider>
   )
 }
 
